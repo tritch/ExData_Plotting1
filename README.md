@@ -22,7 +22,7 @@ This is not a conservative figure, as it will have to load into contiguous RAM, 
 
 * After the two day observations are read into a dataframe, the Date and Time variables are concatenated, converted to a POSIX format, then merged into the `tbl` dataframe as the `DT` variable.
 
-* The following ten variables are included in the dataset:
+* The following ten variables are included in the dataset referenced by `tbl`:
 
 <ol>
 <li><b>Date</b>: Date in format dd/mm/yyyy </li>

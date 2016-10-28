@@ -1,6 +1,6 @@
-#####################
+######################
 # generate plot3.png
-#####################
+######################
 dataDirName <- "c:/Users/tom/Documents/DataScience/course 4/wk 1/project" # edit this path as desired
 setwd(dataDirName)  # make it working directory
 # if previously downloaded, skip the download
