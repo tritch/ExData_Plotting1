@@ -27,13 +27,13 @@ This is not a conservative figure, as it will have to load into contiguous RAM, 
 <ol>
 <li><b>Date</b>: Date in format dd/mm/yyyy </li>
 <li><b>Time</b>: time in format hh:mm:ss </li>
-<li><b>Global.active.power</b>: household global minute-averaged active power (in kilowatt) </li>
-<li><b>Global.reactive.power</b>: household global minute-averaged reactive power (in kilowatt) </li>
+<li><b>Global Active Power</b>: household global minute-averaged active power (in kilowatt) </li>
+<li><b>Global Reactive Power</b>: household global minute-averaged reactive power (in kilowatt) </li>
 <li><b>Voltage</b>: minute-averaged voltage (in volt) </li>
-<li><b>Global.intensity</b>: household global minute-averaged current intensity (in ampere) </li>
-<li><b>Sub.metering.1</b>: energy sub-metering No. 1 (in watt-hour of active energy). It corresponds to the kitchen, containing mainly a dishwasher, an oven and a microwave (hot plates are not electric but gas powered). </li>
-<li><b>Sub.metering.2</b>: energy sub-metering No. 2 (in watt-hour of active energy). It corresponds to the laundry room, containing a washing-machine, a tumble-drier, a refrigerator and a light. </li>
-<li><b>Sub.metering.3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
+<li><b>Global Intensity</b>: household global minute-averaged current intensity (in ampere) </li>
+<li><b>Sub Metering 1</b>: energy sub-metering No. 1 (in watt-hour of active energy). It corresponds to the kitchen, containing mainly a dishwasher, an oven and a microwave (hot plates are not electric but gas powered). </li>
+<li><b>Sub Metering 2</b>: energy sub-metering No. 2 (in watt-hour of active energy). It corresponds to the laundry room, containing a washing-machine, a tumble-drier, a refrigerator and a light. </li>
+<li><b>Sub Metering 3</b>: energy sub-metering No. 3 (in watt-hour of active energy). It corresponds to an electric water-heater and an air-conditioner.</li>
 <li><b>DT</b>: Concatenation of Date and Time variables, converted to a POSIX format.  This variable not in original dataset.</li>
 </ol>
 
@@ -50,17 +50,24 @@ The four plots are shown below.
 
 ### Plot 1
 
+`Global Active Power` frequency distribution.
 
 ![plot1](./plot1.png) 
 
-
 ### Plot 2
 
+`Global Active Power` as a function of time.
 
+![plot2](./plot2.png) 
 
 ### Plot 3
 
+`Sub Metering x` as a function of time for all three Sub Metering variables.
 
+![plot3](./plot3.png) 
 
 ### Plot 4
 
+Composite of Plots 2 and 3 plus `Voltage` and `Global Reactive Power`as a function of time.
+
+![plot4](./plot4.png)

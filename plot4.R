@@ -31,7 +31,7 @@ tbl$DT <- as.POSIXct(paste(as.Date(tbl$Date,format='%d/%m/%Y'), tbl$Time))
 png(filename = "plot4.png")
 # remember default display parameters, then revise for best layout
 prev <- par(mfrow=c(1,1), mar=c(5.1, 4.1, 4.1, 2.1))
-par(mfrow=c(2,2), mar=c(4,2,2,2))
+par(mfrow=c(2,2), mar=c(2,4,2,2))
 with(tbl, {
 plot(`Global Active Power`~ DT, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 })
