@@ -11,7 +11,9 @@ This project uses data from the <a href="http://archive.ics.uci.edu/ml/">UC Irvi
 
 The dataset has 2,075,259 rows and 9 columns. A rough estimate of how much memory the dataset will require to load into memory on the local machine is:
 
-(2,075,259 rows) * (9 columns) * (8 bytes/entry) = 149,418,648 or approx. 150 Mbyte.  This is not a conservative figure, as it will have to load into contiguous RAM, but the author's local machine has 16 Gbyte of RAM, so no problems are expected.  If the user's machine has only 4 Gbyte of RAM some applications may need to be closed before the load is attempted.  If memory has been allocated to previous R simulations, the user may need to run R's garbage collection [ by executing gc() ].  This does not repack memory, and since the file will need to be loaded into contiguous RAM, the user may need to restart R.
+(2,075,259 rows) * (9 columns) * (8 bytes/entry) = approx. 149 Mbyte.
+
+This is not a conservative figure, as it will have to load into contiguous RAM, but the author's local machine has 16 Gbyte of RAM, so no problems are expected.  If the user's machine has only 4 Gbyte of RAM some applications may need to be closed before the load is attempted.  If memory has been allocated to previous R simulations, the user may need to run R's garbage collection [ by executing gc() ].  This does not repack memory, and since the file will need to be loaded into contiguous RAM, the user may need to restart R.
 
 * This analysis will consider data for the two day range 2007-02-01 and 2007-02-02, so only these observations are read into the `data` dataframe.
 
