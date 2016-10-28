@@ -1,13 +1,18 @@
+#####################
+# generate plot2.png
+#####################
 dataDirName <- "c:/Users/tom/Documents/DataScience/course 4/wk 1/project" # edit this path as desired
 setwd(dataDirName)  # make it working directory
-# estimate file size in RAM
-cat( "optimistic file size assumption (Mbyte):\n(2,075,259 rows) * (9 columns) * (8 bytes/entry) =", round(2075259 * 9 * 8 / 1e06))
-url <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
-download.file( url, destfile="./household_power_consumption.zip", mode = "wb")
-# unzip the archive to current working directory;  files will be unzipped to folder "./UCI HAR Dataset"
-unzip("./household_power_consumption.zip", overwrite = T, exdir = getwd())
-# delete zip archive after it's been decompressed
-unlink("./household_power_consumption.zip", force = T)
+# if previously downloaded, skip the download
+if( !file.exists("./household_power_consumption.txt") ) {
+	# prepare to download file
+	url <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
+	download.file( url, destfile="./household_power_consumption.zip", mode = "wb")
+	# unzip the archive to current working directory;  files will be unzipped to folder "./UCI HAR Dataset"
+	unzip("./household_power_consumption.zip", overwrite = T, exdir = getwd())
+	# delete zip archive after it's been decompressed
+	unlink("./household_power_consumption.zip", force = T)
+}
 # load data
 # observations in date range of interest span rows 66638 to 69517
 first <- 66638 # first observation line # for 2/1/2007
